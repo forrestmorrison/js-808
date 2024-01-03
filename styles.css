@@ -15,4 +15,17 @@ main {
 h2 {
     color: #E72E2E;
     font-family: "Roboto";
+    font-size: 32px;
+    position: relative;
+    left: 80%;
+    top: -5%;
+}
+
+h2 span {
+    margin-right: 5px;
+    font-family: "Exo 2";
+    font-size: 34px;
+    color: #202020;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #E72E2E;
 }
