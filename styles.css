@@ -50,6 +50,12 @@ h2 span {
     justify-self: end;
 }
 
+.tempo-section h4 {
+    margin: 0;
+    color: white;
+    font-family: "Roboto";
+}
+
 .tempo-display {
     height: 38px;
     width: 80px;
@@ -76,7 +82,8 @@ h2 span {
 
 .drum-controls {
     grid-column: 2 / 5;
-    align-self: end;
+    grid-row: 3;
+    align-self: start;
     justify-self: end;
 }
 
