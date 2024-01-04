@@ -58,6 +58,12 @@ h2 span {
     text-align: center;
 }
 
+.tempo-display h2 {
+    margin: 0px;
+    font-family: "Orbitron";
+    font-size: 30px;
+}
+
 .knob {
     height: 60px;
     width: 60px;
@@ -68,10 +74,44 @@ h2 span {
     text-align: center;
 }
 
-.tempo-display h2 {
-    margin: 0px;
-    font-family: "Orbitron";
-    font-size: 30px;
+.drum-controls {
+    grid-column: 2 / 5;
+    align-self: end;
+    justify-self: end;
+}
+
+.drum-controls table {
+    color: white;
+    font-family: "Roboto";  
+    border: 1px solid white;
+    border-top: none;
+    border-bottom: none;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid white;
+    border-top: none;
+    border-bottom: none;
+}
+
+td {
+    border: 1px solid white;
+    border-top: none;
+    border-bottom: none;
+}
+
+.drum-knob {
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: grey;
+    color: black;
+    font-family: "Roboto";
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .step-sequencer {
