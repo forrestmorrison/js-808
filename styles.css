@@ -121,6 +121,29 @@ td {
     text-align: center;
 }
 
+.start-stop {
+    margin: auto;
+    margin-bottom: 52px;
+    background-color: #F8A125;
+    color: black;
+    width: 100px;
+    height: 80px;
+    grid-row: 4 / 6;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.start-stop div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.start-stop p {
+    margin: 0;
+    font-weight: bold;
+}
+
 .step-sequencer {
     display: flex;
     flex-direction: row;
@@ -139,22 +162,18 @@ td {
 
 .step-group-1 button {
     background-color: #E72E2E;
-    border: none;
 }
 
 .step-group-2 button {
     background-color: #F8A125;
-    border: none;
 }
 
 .step-group-3 button {
     background-color: #F1F827;
-    border: none;
 }
 
 .step-group-4 button {
     background-color: #FFFFFF;
-    border: none;
 }
 
 h3 {
