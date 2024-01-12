@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Orbitron&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <script src="./scripts.js"></script>
+    
 </head>
 <body>
     
@@ -19,19 +19,18 @@
             <section class="tempo-display">
                 <h2>120</h2>
             </section>
-            <section class="temp-knob">
-                <div class="knob">
-                    I
-                </div>
+            <section class="tempo-buttons">
+                <button>down</button>
+                <button>up</button>
             </section>
         </article>
         <article class="drum-selector">
             <section class="drum-display">
-                <h3 id="current-drum">BD</h3>
+                <h3 id="current-drum"></h3>
             </section>
             <section class="select-buttons">
-                <button>prev</button>
-                <button>next</button>
+                <button id="decrement">prev</button>
+                <button id="increment">next</button>
             </section>
         </article>
         <article class="drum-controls">
@@ -100,5 +99,6 @@
         </article>
         <h3>Rythm Composer JS-808</h3>
     </main>
+    <script src="./scripts.js"></script>
 </body>
 </html>

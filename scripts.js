@@ -9,14 +9,20 @@ const toggleStep = (e) => {
 
 const drums = ["BD", "SD", "LT", "MT", "HT", "RS", "HC", "CB", "CY", "OH", "CH"];
 
-let initialDrumVal = drums[0];
+let curDrum = drums[0];
 
-const cycleDrums = (cur) => {
+document.getElementById("current-drum").innerHTML = curDrum;
+
+document.getElementById("decrement").onclick = function() {
+
+}
+
+document.getElementById("increment").onclick = function() {
     for (let i = 0; i < drums.length; i++) {
-        if(cur[i] === (drums.length - 1)) {
-            cur[i] = 0;
-        } else {
+        if (curDrum === drums[i]) {
             i++;
         }
     }
 }
+
+console.log(curDrum);
