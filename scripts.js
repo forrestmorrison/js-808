@@ -13,16 +13,18 @@ let curDrum = drums[0];
 
 document.getElementById("current-drum").innerHTML = curDrum;
 
-document.getElementById("decrement").onclick = function() {
+let tempo = 120;
 
+document.getElementById("tempo").innerHTML = tempo;
+
+document.getElementById("decrement").onclick = function() {
+    tempo -= 1;
+    document.getElementById("tempo").innerHTML = tempo;
 }
 
 document.getElementById("increment").onclick = function() {
-    for (let i = 0; i < drums.length; i++) {
-        if (curDrum === drums[i]) {
-            i++;
-        }
-    }
+    tempo += 1;
+    document.getElementById("tempo").innerHTML = tempo;
 }
 
 console.log(curDrum);
