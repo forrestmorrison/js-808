@@ -9,9 +9,20 @@ const toggleStep = (e) => {
 
 const drums = ["BD", "SD", "LT", "MT", "HT", "RS", "HC", "CB", "CY", "OH", "CH"];
 
-let curDrum = drums[0];
+let index = 0;
+let curDrum = drums[index];
 
 document.getElementById("current-drum").innerHTML = curDrum;
+
+document.getElementById("next").onclick = function() {
+    curDrum = drums[index+=1];
+    document.getElementById("current-drum").innerHTML = curDrum;
+}
+
+document.getElementById("prev").onclick = function() {
+    curDrum = drums[index-=1];
+    document.getElementById("current-drum").innerHTML = curDrum;
+}
 
 let tempo = 120;
 
