@@ -18,8 +18,8 @@ document.getElementById("current-drum").innerHTML = curDrum;
 document.getElementById("next").onclick = function() { 
     curDrum = drums[index+=1];
     
-    if (index === 11) {
-        index = 0;
+    if (index === 10) {
+        index = -1;
     }
     
 
@@ -31,8 +31,8 @@ document.getElementById("next").onclick = function() {
 document.getElementById("prev").onclick = function() {
     curDrum = drums[index-=1];
 
-    if (index === -1) {
-        index = 10;
+    if (index === 0) {
+        index = 11;
     }
 
     document.getElementById("current-drum").innerHTML = curDrum;
