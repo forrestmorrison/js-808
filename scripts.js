@@ -10,26 +10,30 @@ const toggleStep = (e) => {
 const drums = ["BD", "SD", "LT", "MT", "HT", "RS", "HC", "CB", "CY", "OH", "CH"];
 
 let index = 0;
-for (let i=0; i<drums.length; i++) {
-    if (index >= 11) {
-        index = 0
-    } else if (index <= -1) {
-        index = 10;
-    }
-}
 
 let curDrum = drums[index];
 
 document.getElementById("current-drum").innerHTML = curDrum;
 
-document.getElementById("next").onclick = function() {
+document.getElementById("next").onclick = function() { 
     curDrum = drums[index+=1];
+    
+    if (index === 11) {
+        index = 0;
+    }
+    
 
     document.getElementById("current-drum").innerHTML = curDrum;
+
+    
 }
 
 document.getElementById("prev").onclick = function() {
     curDrum = drums[index-=1];
+
+    if (index === -1) {
+        index = 10;
+    }
 
     document.getElementById("current-drum").innerHTML = curDrum;
 }
